@@ -284,7 +284,14 @@
                     <quiet>true</quiet>
                 </configuration>
             </plugin>
-
+#Added for tools failure for power support architecture ppc64le
+            <exclusions>
+                <exclusion>
+                    <artifactId>tools</artifactId>
+                    <groupId>com.sun</groupId>
+                </exclusion>
+            </exclusions>
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
